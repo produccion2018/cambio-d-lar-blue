@@ -1,0 +1,198 @@
+/* Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fondo Oscuro */
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+}
+
+/* Logo */
+#logo {
+    max-width: 120px; /* Tamaño del logo en PC */
+    margin-bottom: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Título */
+h1 {
+    color: #00b300;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los inputs */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #444;
+    color: #fff;
+    border: 2px solid #00b300;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Contenedor de select */
+.select-container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Etiquetas de select */
+label {
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Select */
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: 2px solid #00b300;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botón convertir */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00b300;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007f00;
+}
+
+/* Botón de eliminar */
+#clear-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#clear-button:hover {
+    background-color: #cc0000;
+}
+
+/* Resultado */
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #444;
+    color: #00b300;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* Espaciado y alineación de elementos */
+input[type="number"], select, button {
+    margin-bottom: 15px;
+}
+
+/* Estilos Responsivos */
+
+/* Tablets (de 768px a 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #logo {
+        max-width: 100px; /* Ajuste en tablets */
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    #clear-button {
+        font-size: 16px;
+    }
+}
+
+/* Móviles (menos de 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        height: auto;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #logo {
+        max-width: 80px; /* Logo aún más pequeño en móviles */
+        opacity: 1;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="number"] {
+        font-size: 16px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #clear-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
